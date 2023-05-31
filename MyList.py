@@ -114,7 +114,7 @@ class MyList:
                 self.clear()
                 return popped_value
             elif abs(target) != length:
-                for i in range(0, length - 1 - abs(target)):
+                for _ in range(0, length - 1 - abs(target)):
                     current_node = current_node.next
                 popped_value = current_node.next.data
                 current_node.next = current_node.next.next
