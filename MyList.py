@@ -204,13 +204,19 @@ def reverse_linked_list(head: "ListNode") -> Union["ListNode", None]:
     return reversed_list
 
 
-first_list = MyList()
-first_list.append(1)
-first_list.append("hi")
-first_list.append(3.14)
-print(f"First Node = {first_list.head}")
-print(f"Last Node = {first_list.tail}")
-first_list.reverse()
-print(f"First Node = {first_list.head}")
-print(f"Last Node = {first_list.tail}")
-print(f"{first_list.length() = }")
+def main():
+    # Random testing
+    first_list = MyList()
+    first_list.append(1)
+    first_list.append("hi")
+    first_list.append(3.14)
+    print(f"First Node = {first_list.head}")
+    print(f"Last Node = {first_list.tail}")
+    first_list.reverse()
+    print(f"First Node = {first_list.head}")
+    print(f"Last Node = {first_list.tail}")
+    print(f"{first_list.length() = }")
+
+
+if __name__ == '__main__':
+    main()
